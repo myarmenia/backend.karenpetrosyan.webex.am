@@ -10,13 +10,14 @@ use Illuminate\Support\Facades\Mail;
 class MessageController extends BaseController
 {
     public function sendMessage(Request $request){
+        $comingrezultresponse='';
 
             try {
                 $response= Mail::to('gorckaarm@gmail.com')->send(new MailToOrganization([
                     "fullname" =>$request->fullname,
                     "number_guest" => $request->number_guest,
                     "message" => $request->message,
-                    "coming_rezult" => $request->coming_rezult
+                    "coming_rezult" => $request->coming_rezult=="yes" ? "Գալու ենք" : "Չենք գալու",
                 ]
 
                 ));
