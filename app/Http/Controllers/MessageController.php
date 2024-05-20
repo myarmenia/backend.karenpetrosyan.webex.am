@@ -19,7 +19,7 @@ class MessageController extends BaseController
                     "message" => $request->message,
                     "coming_rezult" => $request->coming_rezult=="yes" ? "Գալու ենք" : "Չենք գալու",
                 ]
-
+// 
                 ));
 
                     return  $this->sendResponse( $response,'Ձեր պատասխանը հաջողությամբ ուղարկվել է');
