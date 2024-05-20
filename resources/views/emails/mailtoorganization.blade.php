@@ -10,10 +10,10 @@
     <div class="container">
 
         <div class="message">
-            <p>Full name: {{ $details['fullname'] }},</p>
-            <p>Number of guests: {{ $details['number_guest'] }},</p>
-            <p>Messages: {{ $details['message'] }},</p>
-            <p>Coming result: {{ $details['coming_rezult'] }},</p>
+            <p>Անուն Ազգանուն: {{ $details['fullname'] }},</p>
+            <p>Հյուրերի քանակ: {{ $details['number_guest'] }},</p>
+            <p>Հաղորդագրություն: {{ $details['message'] }},</p>
+            <p>Պատասխան: {{ $details['coming_rezult'] }},</p>
 
         </div>
 
