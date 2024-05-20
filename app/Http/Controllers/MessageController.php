@@ -13,10 +13,10 @@ class MessageController extends BaseController
 
             try {
                 $response= Mail::to('gorckaarm@gmail.com')->send(new MailToOrganization([
-                    "organization_name" =>$request->organization_name,
+                    "fullname" =>$request->fullname,
                     "number_guest" => $request->number_guest,
                     "message" => $request->message,
-                    "email" => $request->email
+                    "coming_rezult" => $request->coming_rezult
                 ]
 
                 ));
