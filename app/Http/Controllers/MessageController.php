@@ -28,6 +28,7 @@ class MessageController extends BaseController
                 ],
 
                 ));
+              
 
                     return  $this->sendResponse( $response,'Ձեր պատասխանը հաջողությամբ ուղարկվել է');
               } catch (\Exception $e) {
